@@ -7,7 +7,7 @@
 \usepackage{amssymb}
 \usepackage{graphicx}
 
-\title{Project Proposal Title}
+\title{Development of a framework for the localization of radioactive sources and evaluation methods}
 \author{Salvin George}
 \supervisors{First Supervisor\\Second Supervisor\\Third Supervisor}
 \date{Month 20XX}
@@ -69,10 +69,34 @@ This Research and Developement project holds relevance due to the following reas
 \end{itemize}
 
 \section{Problem Statement}
+The problem of source localization involves estimating the location and intensity of an unknown source in an environment using sensor measurements and prior information. 
+The key aspects of the problem and the approach to solve it are outlined below:
 \begin{itemize}
-    \item Which of the deficits are you going to solve?
-    \item What is your intended approach?
-    \item How will you compare you approach with existing approaches?
+    % \item Which of the deficits are you going to solve?
+    % \item What is your intended approach?
+    % \item How will you compare you approach with existing approaches?
+    \item This project aims to solve the following deficits of the existing approaches:
+    \begin{itemize}
+        \item Addressing the challenge of sensor noise and uncertainty in measurements.
+        \item Improving the efficiency of localization in environments with limited sensor coverage.
+        \item Reducing the computational complexity of localization algorithms for large-scale environments.
+        \item Handling dynamic environments where sources or sensors may be mobile.
+        \item Managing the complexity introduced by multiple sources with different characteristics.
+    \end{itemize}
+    \item The approach to solve the problem involves the following considerations:
+    \begin{itemize}
+        \item Implementing and evaluating rollout algorithms that use Monte Carlo simulations and heuristic search techniques.
+        \item Utilizing entropy-based algorithms to minimize uncertainty in source location estimates by maximizing information gain from new measurements.
+        \item Applying Bayesian inference methods, such as particle filters and Markov Chain Monte Carlo (MCMC) techniques, to estimate the posterior distribution of source locations.
+        \item Exploring hybrid approaches that combine machine learning for initial source localization with optimization-based methods to refine estimates.
+    \end{itemize}
+    \item The comparison of the proposed approach with existing methods will involve the following steps:
+    \begin{itemize}
+        \item Benchmarking the performance of the implemented algorithms against standard datasets and scenarios.
+        \item Evaluating the accuracy and efficiency of each method in different environmental conditions and configurations.
+        \item Comparing computational complexity and resource consumption of each approach.
+        \item Analyzing the robustness of the approaches in handling sensor noise, limited coverage, dynamic environments, and multiple sources.
+    \end{itemize}
 \end{itemize}
 
 \section{Project Plan}
@@ -117,17 +141,20 @@ Make sure to include the writing of your report throughout the whole project, no
 
 \subsubsection*{Minimum Viable}
 \begin{itemize}
-    \item Project results required to get a satisfying or sufficient grade.
+    \item Framework for simulated movement and measurement data
+    \item Interface for the evaluation of methods
 \end{itemize}
 
 \subsubsection*{Expected}
 \begin{itemize}
-    \item Project results required to get a good grade.
+    \item Literature research of methods used for localization
+    \item Implementation of 2-3 localization methods
 \end{itemize}
 
 \subsubsection*{Desired}
 \begin{itemize}
-    \item Project results required to get an excellent grade.
+    \item Add different sensor behaviours
+    \item Evaluation of all implemented methods
 \end{itemize}
 
 Please note that the final grade will not only depend on the results obtained in your work, but also on how you present the results.
